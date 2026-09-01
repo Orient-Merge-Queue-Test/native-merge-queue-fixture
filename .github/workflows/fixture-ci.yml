@@ -23,6 +23,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
+      - name: Fail only the native merge-group candidate
+        if: github.event_name == 'merge_group'
+        run: exit 1
       - run: npm test
 
   credential-isolation:
