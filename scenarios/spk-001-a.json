@@ -1,5 +1,0 @@
-{
-  "scenario": "SPK-001",
-  "member": "A",
-  "operation": { "kind": "add", "value": 1 }
-}
