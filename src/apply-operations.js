@@ -1,3 +1,4 @@
+// Native conflict baseline variant B.
 export function applyOperations(initial, operations) {
   return operations.reduce((value, operation) => {
     if (operation.kind === "add") return value + operation.value;
